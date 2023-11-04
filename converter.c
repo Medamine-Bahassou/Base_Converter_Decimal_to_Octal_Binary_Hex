@@ -3,8 +3,6 @@
 
 int main()
 {
-
-
     int d  , b , i , j , f;
     int *tab ;
     E : {
@@ -29,17 +27,10 @@ int main()
     {
         tab[i] = d % b ;
         d = (int) d/b ;
-
-
     }
-
     // B MAINTENANT C EST LE NOMBRE DE NUM
-
     b=i;
-
-
     int tb[b];
-
  /* AVANT REVERSE ET AVANT CHANGER LES NOMBRE DE L HEXADICIMAL EN CARACTERE
     for(i=0;i<b;i++){
         printf("%d ",tab[i]);
@@ -56,16 +47,14 @@ int main()
      for(i=0;i<b;i++){
             // c est la methode plus EFFICACE
            for(i=0;i<b;i++){
-        if(tb[i]>9){
-            printf("%c ",(char)(tb[i]+55) ); //A=65->F=70
-        }
-        else{
-            printf("%d ",tb[i]);
-        }
+                if(tb[i]>9){
+                    printf("%c ",(char)(tb[i]+55) ); //A=65->F=70
+                }
+                else{
+                    printf("%d ",tb[i]);
+                }
+            }
     }
-
-    }
-
     printf("\n\nif you want to try again print 1, CLICK anything to exit : ");
     scanf("%d",&f);
     printf("\n\n");
@@ -75,7 +64,5 @@ int main()
     }
     else
         exit(0);
-
     return 0;
 }
-
